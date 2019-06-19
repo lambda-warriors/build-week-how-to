@@ -130,60 +130,163 @@ table {
   box-sizing: border-box;
 }
 html {
-  background: #f0f0f0;
+  background: #d0d0d0;
 }
-.landing {
-  width: 95%;
-  height: 400px;
-  background: white;
-  border: 1px solid #669999;
-  border-radius: 1rem;
-  margin: 1rem auto;
-}
-.top-five {
-  width: 98%;
-  height: 200px;
-  background: grey;
-  border: 1px solid #669999;
-  border-radius: 1rem;
-  margin: 1rem auto;
-}
-.copy {
-  font-size: 1rem;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-.nav {
-  width: 100%;
-  padding: 1rem;
-  background: #003333;
-  box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+body {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
+}
+.nav {
+  width: 15%;
+  background: #003333;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  display: block;
 }
 .nav .logo {
+  position: fixed;
   color: whitesmoke;
   font-size: 1.4rem;
-  text-align: center;
-  padding: 0.5rem;
-  text-shadow: -1px -1px rgba(0, 0, 0, 0.4);
-  order: 1;
+  width: 100%;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  margin-left: 1.2rem;
 }
 .nav .nav-buttons {
-  padding: 1rem;
+  text-align: center;
+  position: fixed;
+  top: 60px;
 }
 .nav .nav-buttons a {
-  margin: 1rem auto;
+  display: block;
   color: white;
   text-decoration: none;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
   border: 1px solid #003333;
-  padding: 0.5rem;
+  padding: 1rem;
   border-radius: 0.7rem;
 }
 .nav .nav-buttons a:hover {
   border: 1px solid #002929;
   background: #527a7a;
   color: #003333;
+}
+.close {
+  display: none;
+}
+.landing {
+  width: 95%;
+  padding: 1rem;
+  margin: 0 auto;
+}
+.landing .main-info {
+  background: white;
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+}
+.landing .main-info h1 {
+  font-size: 28px;
+  text-align: end;
+  color: white;
+  background: #003333;
+  padding: 10px;
+}
+.landing .main-info p {
+  text-align: center;
+  font-size: 18px;
+}
+.landing .main-info .btn {
+  width: 30%;
+  border: 1px solid #003333;
+  background: #669999;
+  border-radius: 5px;
+  color: white;
+  text-shadow: 1px 1px black;
+  text-align: center;
+  justify-content: end;
+  margin: 10px auto;
+  padding: 5px;
+}
+.landing .catagories {
+  display: flex;
+  flex-wrap: wrap;
+}
+.landing .catagories .btn {
+  width: 25%;
+  border: 1px solid #003333;
+  background: #669999;
+  border-radius: 5px;
+  color: white;
+  text-shadow: 1px 1px black;
+  text-align: center;
+  justify-content: end;
+  margin: 10px auto;
+  padding: 5px;
+}
+.landing .catagories .info {
+  margin: 1rem auto;
+  width: 30%;
+  border: 1px solid grey;
+  background: white;
+  border-radius: 0.5rem;
+}
+.landing .catagories .info h3 {
+  text-align: center;
+  padding: 7px;
+  font-size: 24px;
+  background: #003333;
+  border-radius: 0.5rem 0.5rem 0 0;
+  color: white;
+}
+.landing .catagories .info p {
+  padding: 5px;
+}
+.top-five {
+  width: 95%;
+  background: #669999;
+  border: 1px solid grey;
+  border-radius: 1rem;
+  padding: 10px;
+  margin: 0 auto;
+}
+.top-five .bar h1 {
+  font-size: 24px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  color: #003333;
+}
+.cards {
+  justify-content: center;
+  display: flex;
+}
+.cards .card {
+  margin: 5px;
+  width: 18%;
+  background: #f0f0f0;
+  border: 1px solid grey;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.cards .card .img {
+  width: 100%;
+  height: 30px;
+  background: #003333;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid #00191a;
+}
+.cards .card .img p {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 5px;
+}
+.cards .card p {
+  padding: 5px;
+}
+.cards .card .btn {
+  width: 40%;
+}
+.copy {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }

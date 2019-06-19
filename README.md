@@ -1,4 +1,3 @@
 # build-week-how-to
 build-week-how-to
-Say Hello
-Hey My Name is Austin
+Design File -- Austin Lynes 4:40pm June 19th 2019

@@ -1,0 +1,189 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  background: #f0f0f0;
+}
+.landing {
+  width: 95%;
+  height: 400px;
+  background: white;
+  border: 1px solid #669999;
+  border-radius: 1rem;
+  margin: 1rem auto;
+}
+.top-five {
+  width: 98%;
+  height: 200px;
+  background: grey;
+  border: 1px solid #669999;
+  border-radius: 1rem;
+  margin: 1rem auto;
+}
+.copy {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.nav {
+  width: 100%;
+  padding: 1rem;
+  background: #003333;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.nav .logo {
+  color: whitesmoke;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 0.5rem;
+  text-shadow: -1px -1px rgba(0, 0, 0, 0.4);
+  order: 1;
+}
+.nav .nav-buttons {
+  padding: 1rem;
+}
+.nav .nav-buttons a {
+  margin: 1rem auto;
+  color: white;
+  text-decoration: none;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+  border: 1px solid #003333;
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+}
+.nav .nav-buttons a:hover {
+  border: 1px solid #002929;
+  background: #527a7a;
+  color: #003333;
+}

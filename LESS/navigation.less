@@ -1,0 +1,38 @@
+.nav {
+    width          : 100%;
+    padding        : 1rem;
+    background     : @deep-teal;
+    box-shadow     : 1px 1px rgba(0, 0, 0, .2);
+    display        : flex;
+    flex-direction : row-reverse;
+    justify-content: space-between;
+
+    .logo {
+        color      : whitesmoke;
+        font-size  : 1.4rem;
+        text-align : center;
+        padding    : .5rem;
+        text-shadow: -1px -1px rgba(0, 0, 0, .4);
+        order      : 1;
+    }
+
+    .nav-buttons {
+        padding: 1rem;
+        
+        a {
+            margin : 1rem auto;
+            color          : white;
+            text-decoration: none;
+            text-shadow    : 2px 2px rgba(0, 0, 0, .2);
+            border:1px solid @deep-teal;
+            padding: .5rem;
+            border-radius: .7rem;
+            &:hover{
+                border:1px solid darken(@deep-teal, 2%);
+                background: darken(@patina, 10%);
+                color:@deep-teal;
+            }
+        }
+    }
+
+}

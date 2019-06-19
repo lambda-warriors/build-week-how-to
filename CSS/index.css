@@ -170,6 +170,7 @@ body {
   border: 1px solid #002929;
   background: #527a7a;
   color: #003333;
+  cursor: pointer;
 }
 .close {
   display: none;
@@ -207,6 +208,11 @@ body {
   margin: 10px auto;
   padding: 5px;
 }
+.landing .main-info .btn:hover {
+  background: #003333;
+  color: white;
+  cursor: pointer;
+}
 .landing .catagories {
   display: flex;
   flex-wrap: wrap;
@@ -222,6 +228,11 @@ body {
   justify-content: end;
   margin: 10px auto;
   padding: 5px;
+}
+.landing .catagories .btn:hover {
+  background: #003333;
+  color: white;
+  cursor: pointer;
 }
 .landing .catagories .info {
   margin: 1rem auto;
@@ -284,6 +295,11 @@ body {
 }
 .cards .card .btn {
   width: 40%;
+}
+.cards .card .btn:hover {
+  background: #003333;
+  color: white;
+  cursor: pointer;
 }
 .copy {
   font-size: 1rem;

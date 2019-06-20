@@ -41,3 +41,50 @@
 .close{
     display:none;
 }
+
+// About Page Nav Bar
+
+.about-nav {
+    width     : 43%;
+    background: @deep-teal;
+    box-shadow: 1px 1px rgba(0, 0, 0, .2);
+    padding   : 1rem;
+    display   : block;
+
+    .about-logo {
+        position  : fixed;
+        color      : whitesmoke;
+        font-size  : 1.4rem;
+        width      : 100%;
+        text-shadow: 1px 1px rgba(0, 0, 0, .4);
+        padding    : 1rem;
+        margin-left: 1.2rem;
+    }
+
+    .about-nav-buttons {
+        text-align: center;
+        position  : fixed;
+        top:60px;
+    }
+
+    a {
+        display        : block;
+        color          : white;
+        text-decoration: none;
+        text-shadow    : 2px 2px rgba(0, 0, 0, .2);
+        border         : 1px solid @deep-teal;
+        padding        : 1rem;
+        border-radius  : .7rem;
+        
+        &:hover {
+            border    : 1px solid darken(@deep-teal, 2%);
+            background: darken(@patina, 10%);
+            color     : @deep-teal;
+            cursor: pointer;
+        }
+    }
+
+}
+
+
+

@@ -175,6 +175,42 @@ body {
 .close {
   display: none;
 }
+.about-nav {
+  width: 43%;
+  background: #003333;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  display: block;
+}
+.about-nav .about-logo {
+  position: fixed;
+  color: whitesmoke;
+  font-size: 1.4rem;
+  width: 100%;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  margin-left: 1.2rem;
+}
+.about-nav .about-nav-buttons {
+  text-align: center;
+  position: fixed;
+  top: 60px;
+}
+.about-nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+  border: 1px solid #003333;
+  padding: 1rem;
+  border-radius: 0.7rem;
+}
+.about-nav a:hover {
+  border: 1px solid #002929;
+  background: #527a7a;
+  color: #003333;
+  cursor: pointer;
+}
 .landing {
   width: 95%;
   padding: 1rem;
@@ -252,6 +288,23 @@ body {
 .landing .catagories .info p {
   padding: 5px;
 }
+.about-us {
+  padding: 3rem;
+  margin-right: 11rem;
+}
+.about-us .about-header {
+  margin-right: 13rem;
+}
+.about-us .main-header {
+  padding: 2rem 0 2rem 20rem;
+  font-size: 3rem;
+  margin: 0 0 3rem 20rem;
+  background: #003333;
+  color: white;
+}
+.about-us .main-header span {
+  margin-left: 8rem;
+}
 .top-five {
   width: 95%;
   background: #669999;
@@ -300,6 +353,54 @@ body {
   background: #003333;
   color: white;
   cursor: pointer;
+}
+.bd-info {
+  border: 1px solid black;
+  margin-bottom: 4rem;
+  margin-left: 16rem;
+  padding-bottom: 3rem;
+  width: 79%;
+  display: flex;
+}
+.bd-info h2 {
+  font-size: 2rem;
+  padding: 2rem 0 5rem 20rem;
+}
+.bd-info h2 span {
+  background: #003333;
+  color: white;
+}
+.bd-info img {
+  width: 17%;
+  height: 0%;
+  margin: 5rem 3rem 0 8rem;
+}
+.bd-info .bd-text {
+  font-size: 1.3rem;
+}
+.al-info {
+  border: 1px solid black;
+  margin-bottom: 4rem;
+  margin-left: 16rem;
+  padding-bottom: 3rem;
+  width: 79%;
+  display: flex;
+}
+.al-info h2 {
+  font-size: 2rem;
+  padding: 2rem 0 5rem 20rem;
+}
+.al-info h2 span {
+  background: #003333;
+  color: white;
+}
+.al-info img {
+  width: 17%;
+  height: 0%;
+  margin: 5rem 3rem 0 8rem;
+}
+.al-info .al-text {
+  font-size: 1.3rem;
 }
 .copy {
   font-size: 1rem;

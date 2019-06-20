@@ -211,6 +211,10 @@ body {
   color: #003333;
   cursor: pointer;
 }
+.about {
+  width: 95%;
+  margin: 0 auto;
+}
 .landing {
   width: 95%;
   padding: 1rem;
@@ -288,23 +292,6 @@ body {
 .landing .catagories .info p {
   padding: 5px;
 }
-.about-us {
-  padding: 3rem;
-  margin-right: 11rem;
-}
-.about-us .about-header {
-  margin-right: 13rem;
-}
-.about-us .main-header {
-  padding: 2rem 0 2rem 20rem;
-  font-size: 3rem;
-  margin: 0 0 3rem 20rem;
-  background: #003333;
-  color: white;
-}
-.about-us .main-header span {
-  margin-left: 8rem;
-}
 .top-five {
   width: 95%;
   background: #669999;
@@ -354,53 +341,42 @@ body {
   color: white;
   cursor: pointer;
 }
-.bd-info {
+.dev-info {
   border: 1px solid black;
-  margin-bottom: 4rem;
-  margin-left: 16rem;
-  padding-bottom: 3rem;
-  width: 79%;
+  width: 95%;
   display: flex;
+  margin: 1rem auto;
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
 }
-.bd-info h2 {
+.dev-info h2 {
+  display: block;
+  width: 100%;
+  padding: 1rem;
   font-size: 2rem;
-  padding: 2rem 0 5rem 20rem;
-}
-.bd-info h2 span {
-  background: #003333;
+  background: #669999;
+  border: 1px solid #003333;
+  border-radius: 10px;
   color: white;
+  order: -1;
+  text-align: center;
 }
-.bd-info img {
-  width: 17%;
-  height: 0%;
-  margin: 5rem 3rem 0 8rem;
+.dev-info img {
+  margin: 10px;
+  box-sizing: unset;
+  border: 3px solid grey;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 300px;
+  border-radius: 5rem;
 }
-.bd-info .bd-text {
+.dev-info .dev-text {
   font-size: 1.3rem;
+  order: 1;
 }
-.al-info {
-  border: 1px solid black;
-  margin-bottom: 4rem;
-  margin-left: 16rem;
-  padding-bottom: 3rem;
-  width: 79%;
-  display: flex;
-}
-.al-info h2 {
-  font-size: 2rem;
-  padding: 2rem 0 5rem 20rem;
-}
-.al-info h2 span {
-  background: #003333;
-  color: white;
-}
-.al-info img {
-  width: 17%;
-  height: 0%;
-  margin: 5rem 3rem 0 8rem;
-}
-.al-info .al-text {
-  font-size: 1.3rem;
+.dev-info.a {
+  flex-direction: row-reverse;
 }
 .copy {
   font-size: 1rem;

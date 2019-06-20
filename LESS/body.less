@@ -1,0 +1,60 @@
+.top-five {
+    width        : 95%;
+    background   : @patina;
+    border       : 1px solid grey;
+    border-radius: 1rem;
+    padding      : 10px;
+    margin       : 0 auto;
+
+    .bar {
+        h1 {
+            font-size  : 24px;
+            text-shadow: 1px 1px rgba(0, 0, 0, .5);
+            color      : @deep-teal;
+        }
+
+    }
+
+}
+
+.cards {
+    justify-content: center;
+    display        : flex;
+
+    .card {
+        margin       : 5px;
+        width        : 18%;
+        background   : #f0f0f0;
+        border       : 1px solid grey;
+        border-radius: 5px;
+        box-shadow   : 5px 5px 5px rgba(0, 0, 0, .2);
+
+        .img {
+            width        : 100%;
+            height       : 30px;
+            background   : @deep-teal;
+            border-radius: 4px 4px 0 0;
+            border-bottom: 1px solid darken(@deep-teal, 5%);
+
+            p {
+                color      : white;
+                font-size  : 20px;
+                text-align : center;
+                padding-top: 5px;
+            }
+        }
+
+        p {
+            padding: 5px;
+        }
+
+        .btn {
+            width: 40%;
+           &:hover{
+               background: @deep-teal;
+               color: white;
+               cursor: pointer;
+           }
+        }
+    }
+}

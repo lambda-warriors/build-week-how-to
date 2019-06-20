@@ -175,6 +175,49 @@ body {
 .close {
   display: none;
 }
+<<<<<<< Updated upstream
+=======
+.about-nav {
+  width: 43%;
+  background: #003333;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  display: block;
+}
+.about-nav .about-logo {
+  position: fixed;
+  color: whitesmoke;
+  font-size: 1.4rem;
+  width: 100%;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  margin-left: 1.2rem;
+}
+.about-nav .about-nav-buttons {
+  text-align: center;
+  position: fixed;
+  top: 60px;
+}
+.about-nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+  border: 1px solid #003333;
+  padding: 1rem;
+  border-radius: 0.7rem;
+}
+.about-nav a:hover {
+  border: 1px solid #002929;
+  background: #527a7a;
+  color: #003333;
+  cursor: pointer;
+}
+.about {
+  width: 95%;
+  margin: 0 auto;
+}
+>>>>>>> Stashed changes
 .landing {
   width: 95%;
   padding: 1rem;
@@ -301,6 +344,46 @@ body {
   color: white;
   cursor: pointer;
 }
+<<<<<<< Updated upstream
+=======
+.dev-info {
+  border: 1px solid black;
+  width: 95%;
+  display: flex;
+  margin: 1rem auto;
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.dev-info h2 {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  font-size: 2rem;
+  background: #669999;
+  border: 1px solid #003333;
+  border-radius: 10px;
+  color: white;
+  order: -1;
+  text-align: center;
+}
+.dev-info img {
+  margin: 10px;
+  box-sizing: unset;
+  border: 3px solid grey;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 300px;
+  border-radius: 5rem;
+}
+.dev-info .dev-text {
+  font-size: 1.3rem;
+  order: 1;
+}
+.dev-info.a {
+  flex-direction: row-reverse;
+}
+>>>>>>> Stashed changes
 .copy {
   font-size: 1rem;
   text-align: center;

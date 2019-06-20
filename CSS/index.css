@@ -175,6 +175,42 @@ body {
 .close {
   display: none;
 }
+.about-nav {
+  width: 43%;
+  background: #003333;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  display: block;
+}
+.about-nav .about-logo {
+  position: fixed;
+  color: whitesmoke;
+  font-size: 1.4rem;
+  width: 100%;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  margin-left: 1.2rem;
+}
+.about-nav .about-nav-buttons {
+  text-align: center;
+  position: fixed;
+  top: 60px;
+}
+.about-nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+  border: 1px solid #003333;
+  padding: 1rem;
+  border-radius: 0.7rem;
+}
+.about-nav a:hover {
+  border: 1px solid #002929;
+  background: #527a7a;
+  color: #003333;
+  cursor: pointer;
+}
 .about {
   width: 95%;
   margin: 0 auto;

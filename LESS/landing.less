@@ -32,10 +32,11 @@
             justify-content: end;
             margin         : 10px auto;
             padding        : 5px;
-            &:hover{
+
+            &:hover {
                 background: @deep-teal;
-                color: white;
-                cursor: pointer;
+                color     : white;
+                cursor    : pointer;
             }
         }
 
@@ -56,10 +57,11 @@
             justify-content: end;
             margin         : 10px auto;
             padding        : 5px;
-            &:hover{
+
+            &:hover {
                 background: @deep-teal;
-                color: white;
-                cursor: pointer;
+                color     : white;
+                cursor    : pointer;
             }
         }
 
@@ -87,5 +89,43 @@
 
 }
 
-// About Us Page
+//Cook it
+.main-info.cook-it {
+    padding: 1rem;
 
+    .recipe {
+        display        : flex;
+        flex-direction : row;
+        padding        : 1rem;
+        .steps {
+            width          : 45%;
+            padding        : 0 2rem;
+            list-style-type: disc;
+        }
+
+    }
+
+    .directions {
+        padding      : 2rem;
+        width        : 100%;
+        margin       : 1rem auto;
+        text-align   : center;
+        border-radius: 10px;
+        border       : 1px solid @deep-teal;
+        background   : @patina;
+    }
+
+
+    .description {
+        padding       : 1rem;
+        border        : 1px solid @deep-teal;
+        background    : @patina;
+        display       : flex;
+        flex-direction: row-reverse;
+
+        img {
+            width : 30%;
+            height: 200px;
+        }
+    }
+}

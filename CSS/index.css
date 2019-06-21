@@ -378,6 +378,53 @@ body {
 .dev-info.a {
   flex-direction: row-reverse;
 }
+.login-box {
+  margin: 90px auto;
+  border: 1px solid black;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+.login-box h2 {
+  text-align: center;
+  font-size: 3rem;
+  background: #003333;
+  color: white;
+  padding: 10px 120px;
+}
+form {
+  padding: 30px 0;
+}
+form p {
+  padding: 20px 15px;
+  font-size: 1.2rem;
+}
+form input {
+  margin-left: 16px;
+}
+form .login-btn {
+  width: 80%;
+  margin: 14px 0 14px 34px;
+  height: 50px;
+  background: #669999;
+  color: white;
+  font-size: 1.3rem;
+  border-radius: 8px;
+}
+form .login-btn:hover {
+  background: #003333;
+  color: white;
+  cursor: pointer;
+}
+form a {
+  display: flex;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+}
+form a:hover {
+  color: #da3309;
+}
 .copy {
   font-size: 1rem;
   text-align: center;

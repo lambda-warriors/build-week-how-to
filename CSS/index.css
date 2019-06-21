@@ -292,6 +292,39 @@ body {
 .landing .catagories .info p {
   padding: 5px;
 }
+.main-info.cook-it {
+  padding: 1rem;
+}
+.main-info.cook-it .recipe {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+.main-info.cook-it .recipe .steps {
+  width: 45%;
+  padding: 0 2rem;
+  list-style-type: disc;
+}
+.main-info.cook-it .directions {
+  padding: 2rem;
+  width: 100%;
+  margin: 1rem auto;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #003333;
+  background: #669999;
+}
+.main-info.cook-it .description {
+  padding: 1rem;
+  border: 1px solid #003333;
+  background: #669999;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.main-info.cook-it .description img {
+  width: 30%;
+  height: 200px;
+}
 .top-five {
   width: 95%;
   background: #669999;

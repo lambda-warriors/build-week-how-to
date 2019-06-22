@@ -1,4 +1,5 @@
 .top-five {
+
     width        : 95%;
     background   : @patina;
     border       : 1px solid grey;
@@ -18,10 +19,20 @@
 }
 
 .cards {
+    display: flex;
+
+    @media @mobile {
+        flex-direction: column;
+    }
+
     justify-content: center;
-    display        : flex;
 
     .card {
+        @media @mobile {
+            width : 95%;
+            margin: 10px auto;
+        }
+
         margin       : 5px;
         width        : 18%;
         background   : #f0f0f0;
@@ -60,98 +71,134 @@
     }
 }
 
-// About Page Body
-.dev-info {
-    border: 1px solid black;
-    width: 95%;
-    display: flex;
-    margin: 1rem auto;
-    background: white;
-    border-radius: 10px;
-    padding: 1rem;
-  }
-  .dev-info h2 {
-    display: block;
-    width: 100%;
-    padding: 1rem;
-    font-size: 2rem;
-    background: #669999;
-    border: 1px solid #003333;
-    border-radius: 10px;
-    color: white;
-    order: -1;
-    text-align: center;
-  }
-  .dev-info img {
-    margin: 10px;
-    box-sizing: unset;
-    border: 3px solid grey;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-    width: 300px;
-    height: 300px;
-    border-radius: 5rem;
-  }
-  .dev-info .dev-text {
-    font-size: 1.3rem;
-    order: 1;
-  }
-  .dev-info.a {
-    flex-direction: row-reverse;
-  }
+@media @mobile {
+    flex-direction: column;
+}
 
-  // Sign In Page
+// About Page Body
+
+.bd-info {
+    border        : 1px solid black;
+    margin-bottom : 4rem;
+    margin-left   : 16rem;
+    padding-bottom: 3rem;
+    width         : 79%;
+    display       : flex;
+
+    h2 {
+        font-size: 2rem;
+        padding  : 2rem 0 5rem 20rem;
+
+        span {
+            background: @deep-teal;
+            color     : white;
+        }
+    }
+
+    img {
+        width : 17%;
+        height: 0%;
+        margin: 5rem 3rem 0 8rem;
+    }
+
+    .bd-text {
+        font-size: 1.3rem;
+
+    }
+}
+
+.al-info {
+    border        : 1px solid black;
+    margin-bottom : 4rem;
+    margin-left   : 16rem;
+    padding-bottom: 3rem;
+    width         : 79%;
+    display       : flex;
+
+    h2 {
+        font-size: 2rem;
+        padding  : 2rem 0 5rem 20rem;
+
+        span {
+            background: @deep-teal;
+            color     : white;
+        }
+    }
+
+    img {
+        width : 17%;
+        height: 0%;
+        margin: 5rem 3rem 0 8rem;
+    }
+
+    .al-text {
+        font-size: 1.3rem;
+
+    }
+}
+
+// Sign In Page
 
 .login-box {
-    margin: 90px auto;
-    border: 1px solid black;
-    background: white;
-    display: flex;
+    @media @mobile {
+        width : 95%;
+        margin: 10px auto;
+        ;
+    }
+
+    margin        : 90px auto;
+    border        : 1px solid black;
+    background    : white;
+    display       : flex;
     flex-direction: column;
 
     h2 {
-      text-align: center;
-      font-size: 3rem;
-      background: @deep-teal;
-      color:white;
-      padding: 10px 120px;
-          
+        text-align: center;
+        font-size : 3rem;
+        background: @deep-teal;
+        color     : white;
+        padding   : 10px 120px;
+
     }
 }
 
 form {
-    padding: 30px 0;
+    padding   : 1rem;
+    width     : 100%;
+    margin    : 1rem auto;
+    text-align: center;
 
     p {
-        padding: 20px 15px;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
 
     input {
-        margin-left: 16px;
-        
+        margin : 1rem auto;
+        padding: 1rem;
+        height : 1rem;
+        width  : 90%;
     }
 
     .login-btn {
-    width: 80%;  
-    margin: 14px 0 14px 34px;  
-    height: 50px;
-    background: @patina;
-    color: white;
-    font-size: 1.3rem;
-    border-radius: 8px;
+        width        : 80%;
+        margin       : 1rem auto;
+        background   : @patina;
+        color        : white;
+        font-size    : 1.3rem;
+        border-radius: 8px;
 
-    &:hover {
-        background: @deep-teal;
-        color: white;
-        cursor: pointer;
+        &:hover {
+            background: @deep-teal;
+            color     : white;
+            cursor    : pointer;
         }
     }
 
     a {
-        display: flex;
-        margin-bottom: 10px;
+        display        : flex;
+        margin-bottom  : 10px;
         text-decoration: none;
-        color: black;
+        color          : black;
 
         &:hover {
             color: #da3309;

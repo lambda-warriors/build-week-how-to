@@ -77,6 +77,76 @@
 
 // About Page Body
 
+.dev-info {
+    border: 1px solid black;
+    width: 95%;
+    display: flex;
+    margin: 1rem auto;
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+
+    @media @mobile{
+        padding-bottom: 11rem;
+    }
+  }
+  .dev-info h2 {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 2rem;
+    background: #669999;
+    border: 1px solid #003333;
+    border-radius: 10px;
+    color: white;
+    order: -1;
+    text-align: center;
+}
+    
+  .dev-info img {
+    margin: 10px;
+    box-sizing: unset;
+    border: 3px solid grey;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 300px;
+    border-radius: 5rem;
+  }
+  .dev-info .dev-text {
+    font-size: 1.3rem;
+    order: 1;
+
+    @media @mobile {
+        position: absolute;
+        top: 36rem;
+        width: 320px;
+    }
+}
+   
+
+  .dev-info.a {
+    flex-direction: row-reverse;
+
+    @media @mobile {
+        .dev-text {
+            position: absolute;
+            top: 73rem;
+            width: 320px;
+        }
+    }
+}
+
+@media @mobile {
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 4rem;
+    }
+}
+
+
+  // Sign In Page
+
 .bd-info {
     border        : 1px solid black;
     margin-bottom : 4rem;
@@ -139,7 +209,17 @@
 
 // Sign In Page
 
+
+.about-container {
+    height: 879px;
+}
+
 .login-box {
+
+    margin: 90px auto 372px;
+    border: 1px solid black;
+    background: white;
+    display: flex;
     @media @mobile {
         width : 95%;
         margin: 10px auto;
@@ -150,6 +230,7 @@
     border        : 1px solid black;
     background    : white;
     display       : flex;
+
     flex-direction: column;
 
     h2 {

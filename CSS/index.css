@@ -233,6 +233,9 @@ body {
   color: #003333;
   cursor: pointer;
 }
+.nav .login {
+  height: 879px;
+}
 .about {
   width: 95%;
   margin: 0 auto;
@@ -434,7 +437,19 @@ body {
   width: 79%;
   display: flex;
 }
+
+@media (max-width:500px) {
+  .dev-info {
+    padding-bottom: 11rem;
+  }
+}
+.dev-info h2 {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+
 .bd-info h2 {
+
   font-size: 2rem;
   padding: 2rem 0 5rem 20rem;
 }
@@ -450,7 +465,17 @@ body {
 .bd-info .bd-text {
   font-size: 1.3rem;
 }
-.al-info {
+
+@media (max-width:500px) {
+  .dev-info .dev-text {
+    position: absolute;
+    top: 36rem;
+    width: 320px;
+  }
+}
+.dev-info.a {
+  flex-direction: row-reverse;
+al-info {
   border: 1px solid black;
   margin-bottom: 4rem;
   margin-left: 16rem;
@@ -474,8 +499,25 @@ body {
 .al-info .al-text {
   font-size: 1.3rem;
 }
+@media (max-width:500px) {
+  .dev-info.a .dev-text {
+    position: absolute;
+    top: 73rem;
+    width: 320px;
+  }
+}
+@media (max-width:500px) {
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+}
+.about-container {
+  height: 879px;
+}
 .login-box {
-  margin: 90px auto;
+  margin: 90px auto 372px;
   border: 1px solid black;
   background: white;
   display: flex;

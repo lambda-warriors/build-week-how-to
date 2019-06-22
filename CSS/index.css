@@ -143,6 +143,11 @@ body {
   padding: 1rem;
   display: block;
 }
+@media (max-width:500px) {
+  .nav {
+    flex-direction: row;
+  }
+}
 .nav .logo {
   position: fixed;
   color: whitesmoke;
@@ -210,6 +215,9 @@ body {
   background: #527a7a;
   color: #003333;
   cursor: pointer;
+}
+.nav .login {
+  height: 879px;
 }
 .about {
   width: 95%;
@@ -383,6 +391,11 @@ body {
   border-radius: 10px;
   padding: 1rem;
 }
+@media (max-width:500px) {
+  .dev-info {
+    padding-bottom: 11rem;
+  }
+}
 .dev-info h2 {
   display: block;
   width: 100%;
@@ -408,11 +421,35 @@ body {
   font-size: 1.3rem;
   order: 1;
 }
+@media (max-width:500px) {
+  .dev-info .dev-text {
+    position: absolute;
+    top: 36rem;
+    width: 320px;
+  }
+}
 .dev-info.a {
   flex-direction: row-reverse;
 }
+@media (max-width:500px) {
+  .dev-info.a .dev-text {
+    position: absolute;
+    top: 73rem;
+    width: 320px;
+  }
+}
+@media (max-width:500px) {
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+}
+.about-container {
+  height: 879px;
+}
 .login-box {
-  margin: 90px auto;
+  margin: 90px auto 372px;
   border: 1px solid black;
   background: white;
   display: flex;

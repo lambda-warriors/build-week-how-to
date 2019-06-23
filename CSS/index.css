@@ -136,7 +136,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   body {
     flex-direction: column;
     width: 100%;
@@ -149,9 +149,14 @@ body {
   padding: 1rem;
   display: block;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .nav {
     width: 100%;
+    flex-direction: row;
+  }
+}
+@media (max-width:500px) {
+  .nav {
     flex-direction: row;
   }
 }
@@ -164,7 +169,7 @@ body {
   padding: 1rem;
   margin-left: 1.2rem;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .nav .logo {
     position: unset;
   }
@@ -174,7 +179,7 @@ body {
   position: fixed;
   top: 60px;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .nav .nav-buttons {
     position: unset;
   }
@@ -250,7 +255,7 @@ body {
   border: 1px solid grey;
   border-radius: 0.5rem;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .landing .main-info {
     margin: 1rem auto;
   }
@@ -287,7 +292,7 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .landing .catagories {
     flex-direction: column;
   }
@@ -316,7 +321,7 @@ body {
   background: white;
   border-radius: 0.5rem;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .landing .catagories .info {
     margin: 1rem auto;
     width: 100%;
@@ -336,6 +341,11 @@ body {
 .main-info.cook-it {
   padding: 1rem;
 }
+@media (max-width:500px) {
+  .main-info.cook-it h1 {
+    text-align: center;
+  }
+}
 .main-info.cook-it .recipe {
   display: flex;
   flex-direction: row;
@@ -345,6 +355,19 @@ body {
   width: 45%;
   padding: 0 2rem;
   list-style-type: disc;
+}
+@media (max-width:500px) {
+  .main-info.cook-it .recipe .steps {
+    position: absolute;
+    padding: 14rem 8rem 0 0;
+    width: 399px;
+  }
+}
+@media (max-width:500px) {
+  .main-info.cook-it .recipe img {
+    width: 100%;
+    height: 210px;
+  }
 }
 .main-info.cook-it .directions {
   padding: 2rem;
@@ -362,9 +385,23 @@ body {
   display: flex;
   flex-direction: row-reverse;
 }
+@media (max-width:500px) {
+  .main-info.cook-it .description {
+    margin-top: 50rem;
+    flex-direction: column;
+  }
+}
 .main-info.cook-it .description img {
   width: 30%;
   height: 200px;
+}
+@media (max-width:500px) {
+  .main-info.cook-it .description img {
+    width: 100%;
+    height: 220px;
+    margin: auto;
+    padding-bottom: 2rem;
+  }
 }
 .top-five {
   width: 95%;
@@ -383,7 +420,7 @@ body {
   display: flex;
   justify-content: center;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .cards {
     flex-direction: column;
   }
@@ -396,7 +433,7 @@ body {
   border-radius: 5px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .cards .card {
     width: 95%;
     margin: 10px auto;
@@ -426,18 +463,18 @@ body {
   color: white;
   cursor: pointer;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   flex-direction: column;
 }
-.bd-info {
+.dev-info {
   border: 1px solid black;
-  margin-bottom: 4rem;
-  margin-left: 16rem;
-  padding-bottom: 3rem;
-  width: 79%;
+  width: 95%;
   display: flex;
+  margin: 1rem auto;
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
 }
-
 @media (max-width:500px) {
   .dev-info {
     padding-bottom: 11rem;
@@ -447,9 +484,60 @@ body {
   display: block;
   width: 100%;
   padding: 1rem;
-
+  font-size: 2rem;
+  background: #669999;
+  border: 1px solid #003333;
+  border-radius: 10px;
+  color: white;
+  order: -1;
+  text-align: center;
+}
+.dev-info img {
+  margin: 10px;
+  box-sizing: unset;
+  border: 3px solid grey;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 300px;
+  border-radius: 5rem;
+}
+.dev-info .dev-text {
+  font-size: 1.3rem;
+  order: 1;
+}
+@media (max-width:500px) {
+  .dev-info .dev-text {
+    position: absolute;
+    top: 49rem;
+    width: 320px;
+  }
+}
+.dev-info.a {
+  flex-direction: row-reverse;
+}
+@media (max-width:500px) {
+  .dev-info.a .dev-text {
+    position: absolute;
+    top: 86rem;
+    width: 320px;
+  }
+}
+@media (max-width:500px) {
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+}
+.bd-info {
+  border: 1px solid black;
+  margin-bottom: 4rem;
+  margin-left: 16rem;
+  padding-bottom: 3rem;
+  width: 79%;
+  display: flex;
+}
 .bd-info h2 {
-
   font-size: 2rem;
   padding: 2rem 0 5rem 20rem;
 }
@@ -465,17 +553,7 @@ body {
 .bd-info .bd-text {
   font-size: 1.3rem;
 }
-
-@media (max-width:500px) {
-  .dev-info .dev-text {
-    position: absolute;
-    top: 36rem;
-    width: 320px;
-  }
-}
-.dev-info.a {
-  flex-direction: row-reverse;
-al-info {
+.al-info {
   border: 1px solid black;
   margin-bottom: 4rem;
   margin-left: 16rem;
@@ -499,31 +577,18 @@ al-info {
 .al-info .al-text {
   font-size: 1.3rem;
 }
-@media (max-width:500px) {
-  .dev-info.a .dev-text {
-    position: absolute;
-    top: 73rem;
-    width: 320px;
-  }
-}
-@media (max-width:500px) {
-  h1 {
-    text-align: center;
-    font-size: 2rem;
-    margin-top: 4rem;
-  }
-}
 .about-container {
   height: 879px;
 }
 .login-box {
   margin: 90px auto 372px;
+  margin: 90px auto;
   border: 1px solid black;
   background: white;
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .login-box {
     width: 95%;
     margin: 10px auto;

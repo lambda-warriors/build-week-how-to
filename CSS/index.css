@@ -161,6 +161,10 @@ body {
 }
 .nav .logo {
   position: fixed;
+  top: null;
+  bottom: null;
+  right: null;
+  left: null;
   width: null;
   height: null;
   margin: 0 auto;
@@ -170,6 +174,7 @@ body {
   color: white;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
   text-align: center;
+  text-decoration: null;
 }
 @media (max-width: 500px) {
   .nav .logo {
@@ -180,6 +185,9 @@ body {
   text-align: center;
   position: fixed;
   top: 60px;
+  bottom: null;
+  right: null;
+  left: null;
 }
 @media (max-width: 500px) {
   .nav .nav-buttons {
@@ -188,17 +196,42 @@ body {
 }
 .nav .nav-buttons a {
   display: block;
-  color: white;
-  text-decoration: none;
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
-  border: 1px solid #003333;
+  width: null;
+  height: null;
+  margin: null;
   padding: 1rem;
+  background: null;
+  font-size: null;
+  color: #f0f0f0;
+  text-shadow: rgba(0, 0, 0, 0.2);
+  text-align: null;
+  text-decoration: none;
+  border: 1px solid #003333;
+  border-top: null;
+  border-bottom: null;
+  border-right: null;
+  border-left: null;
   border-radius: 0.7rem;
+  box-shadow: null;
 }
 .nav .nav-buttons a:hover {
-  border: 1px solid #002929;
+  width: null;
+  height: null;
+  margin: null;
+  padding: null;
   background: #527a7a;
+  font-size: null;
   color: #003333;
+  text-shadow: null;
+  text-align: null;
+  text-decoration: null;
+  border: 1px solid #002929;
+  border-top: null;
+  border-bottom: null;
+  border-right: null;
+  border-left: null;
+  border-radius: null;
+  box-shadow: null;
   cursor: pointer;
 }
 .close {
@@ -206,61 +239,88 @@ body {
 }
 .about {
   width: 95%;
+  height: null;
   margin: 0 auto;
+  padding: null;
+  background: null;
 }
-.dev-info {
-  border: 1px solid black;
-  width: 95%;
+.about .dev-info {
   display: flex;
+  width: null;
+  height: null;
   margin: 1rem auto;
-  background: white;
-  border-radius: 10px;
   padding: 1rem;
+  background: white;
+  border: 1px solid black;
+  border-top: null;
+  border-bottom: null;
+  border-right: null;
+  border-left: null;
+  border-radius: 10px;
+  box-shadow: null;
 }
-.dev-info h2 {
+.about .dev-info h2 {
   display: block;
   width: 100%;
+  height: null;
+  margin: null;
   padding: 1rem;
-  font-size: 2rem;
   background: #669999;
-  border: 1px solid #003333;
-  border-radius: 10px;
-  color: white;
-  order: -1;
+  font-size: 2rem;
+  color: #f0f0f0;
+  text-shadow: null;
   text-align: center;
+  text-decoration: null;
+  border: 1px solid #003333;
+  border-top: null;
+  border-bottom: null;
+  border-right: null;
+  border-left: null;
+  border-radius: 10px;
+  box-shadow: null;
+  order: -1;
 }
-.dev-info img {
-  margin: 10px;
+.about .dev-info img {
   box-sizing: unset;
-  border: 3px solid grey;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   width: 300px;
   height: 300px;
+  margin: 10px;
+  padding: null;
+  background: null;
+  border: 3px solid grey;
+  border-top: null;
+  border-bottom: null;
+  border-right: null;
+  border-left: null;
   border-radius: 5rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
-.dev-info .dev-text {
+.about .dev-info .dev-text {
   font-size: 1.3rem;
   order: 1;
 }
-.dev-info.a {
+.about .dev-info.a {
   flex-direction: row-reverse;
 }
 @media (max-width: 500px) {
-  .dev-info {
+  .about .dev-info {
     display: block;
   }
-  h1 {
+  .about h1 {
     text-align: center;
     font-size: 2rem;
     margin-top: 1rem;
   }
 }
 .login-box {
-  margin: 90px auto 372px;
-  margin: 90px auto;
-  border: 1px solid black;
-  background: white;
+  width: null;
+  height: null;
+  margin: 10rem auto;
+  padding: null;
   display: flex;
+  margin: 90px auto;
+  background: white;
+  border: 1px solid black;
   flex-direction: column;
 }
 @media (max-width: 500px) {
@@ -313,80 +373,22 @@ form a {
 form a:hover {
   color: #da3309;
 }
-.main-info.cook-it {
-  padding: 1rem;
-}
-@media (max-width: 500px) {
-  .main-info.cook-it h1 {
-    text-align: center;
-  }
-}
-.main-info.cook-it .recipe {
-  display: flex;
-  flex-direction: row;
-  padding: 1rem;
-}
-.main-info.cook-it .recipe .steps {
-  width: 45%;
-  padding: 0 2rem;
-  list-style-type: disc;
-}
-@media (max-width: 500px) {
-  .main-info.cook-it .recipe .steps {
-    position: absolute;
-    padding: 14rem 8rem 0 0;
-    width: 399px;
-  }
-}
-@media (max-width: 500px) {
-  .main-info.cook-it .recipe img {
-    width: 100%;
-    height: 210px;
-  }
-}
-.main-info.cook-it .directions {
-  padding: 2rem;
-  width: 100%;
-  margin: 1rem auto;
-  text-align: center;
-  border-radius: 10px;
-  border: 1px solid #003333;
-  background: #669999;
-}
-.main-info.cook-it .description {
-  padding: 1rem;
-  border: 1px solid #003333;
-  background: #669999;
-  display: flex;
-  flex-direction: row-reverse;
-}
-@media (max-width: 500px) {
-  .main-info.cook-it .description {
-    margin-top: 50rem;
-    flex-direction: column;
-  }
-}
-.main-info.cook-it .description img {
-  width: 30%;
-  height: 200px;
-}
-@media (max-width: 500px) {
-  .main-info.cook-it .description img {
-    width: 100%;
-    height: 220px;
-    margin: auto;
-    padding-bottom: 2rem;
-  }
-}
 .landing {
   width: 95%;
-  padding: 1rem;
+  height: null;
   margin: 0 auto;
+  padding: 1rem;
+  background: null;
 }
 .landing .main-info {
   background: white;
   border: 1px solid grey;
+  border-top: null;
+  border-bottom: null;
+  border-right: null;
+  border-left: null;
   border-radius: 0.5rem;
+  box-shadow: null;
 }
 @media (max-width: 500px) {
   .landing .main-info {
@@ -394,32 +396,23 @@ form a:hover {
   }
 }
 .landing .main-info h1 {
-  font-size: 28px;
-  text-align: end;
-  color: white;
-  background: #003333;
+  width: null;
+  height: null;
+  margin: null;
   padding: 10px;
+  background: #003333;
+  font-size: 28px;
+  color: white;
+  text-shadow: null;
+  text-align: end;
+  text-decoration: null;
 }
 .landing .main-info p {
-  text-align: center;
   font-size: 18px;
-}
-.landing .main-info .btn {
-  width: 30%;
-  border: 1px solid #003333;
-  background: #669999;
-  border-radius: 5px;
-  color: white;
-  text-shadow: 1px 1px black;
+  color: null;
+  text-shadow: null;
   text-align: center;
-  justify-content: end;
-  margin: 10px auto;
-  padding: 5px;
-}
-.landing .main-info .btn:hover {
-  background: #003333;
-  color: white;
-  cursor: pointer;
+  text-decoration: null;
 }
 .landing .catagories {
   display: flex;
@@ -430,30 +423,19 @@ form a:hover {
     flex-direction: column;
   }
 }
-.landing .catagories .btn {
-  width: 25%;
-  border: 1px solid #003333;
-  background: #669999;
-  border-radius: 5px;
-  color: white;
-  text-shadow: 1px 1px black;
-  text-align: center;
-  justify-content: end;
-  margin: 10px auto;
-  padding: 5px;
-  text-decoration: none;
-}
-.landing .catagories .btn:hover {
-  background: #003333;
-  color: white;
-  cursor: pointer;
-}
 .landing .catagories .info {
-  margin: 1rem auto;
   width: 30%;
-  border: 1px solid grey;
+  height: null;
+  margin: 1rem auto;
+  padding: null;
   background: white;
+  border: 1px solid grey;
+  border-top: null;
+  border-bottom: null;
+  border-right: null;
+  border-left: null;
   border-radius: 0.5rem;
+  box-shadow: null;
 }
 @media (max-width: 500px) {
   .landing .catagories .info {
@@ -462,19 +444,57 @@ form a:hover {
   }
 }
 .landing .catagories .info h3 {
-  text-align: center;
+  width: null;
+  height: null;
+  margin: null;
   padding: 7px;
-  font-size: 24px;
   background: #003333;
-  border-radius: 0.5rem 0.5rem 0 0;
+  font-size: 24px;
   color: white;
+  text-shadow: null;
+  text-align: center;
+  text-decoration: null;
+  border: null;
+  border-top: null;
+  border-bottom: null;
+  border-right: null;
+  border-left: null;
+  border-radius: 0.5rem 0.5rem 0 0;
+  box-shadow: null;
 }
 .landing .catagories .info p {
   padding: 5px;
 }
+.landing .btn {
+  width: 30%;
+  height: null;
+  margin: 10px auto;
+  padding: 5px;
+  background: #669999;
+  font-size: null;
+  color: white;
+  text-shadow: 1px 1px black;
+  text-align: center;
+  text-decoration: null;
+  border: 1px solid #003333;
+  border-top: null;
+  border-bottom: null;
+  border-right: null;
+  border-left: null;
+  border-radius: 5px;
+  box-shadow: null;
+  justify-content: end;
+}
+.landing .btn a {
+  font-size: null;
+  color: #f0f0f0;
+  text-shadow: null;
+  text-align: null;
+  text-decoration: none;
+}
 .top-five {
   width: 95%;
-  height: #669999;
+  height: null;
   margin: 0 auto;
   padding: 10px;
   background: null;
@@ -491,6 +511,7 @@ form a:hover {
   color: #003333;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
   text-align: null;
+  text-decoration: null;
 }
 .cards {
   display: flex;
@@ -540,6 +561,7 @@ form a:hover {
   color: white;
   text-shadow: null;
   text-align: center;
+  text-decoration: null;
   padding-top: 5px;
 }
 .cards .card p {
@@ -557,4 +579,86 @@ form a:hover {
   font-size: 1rem;
   text-align: center;
   margin-bottom: 2rem;
+}
+.main-info.cook-it {
+  padding: 1rem;
+}
+@media (max-width: 500px) {
+  .main-info.cook-it h1 {
+    text-align: center;
+  }
+}
+.main-info.cook-it .recipe {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+@media (max-width: 500px) {
+  .main-info.cook-it .recipe {
+    display: block;
+  }
+  .main-info.cook-it .recipe img {
+    width: 100%;
+    height: 210px;
+  }
+}
+.main-info.cook-it .recipe .steps {
+  width: 45%;
+  height: null;
+  margin: null;
+  padding: 0 2rem;
+  background: null;
+  list-style-type: disc;
+}
+@media (max-width: 500px) {
+  .main-info.cook-it .recipe .steps {
+    width: 100%;
+    text-align: center;
+  }
+}
+.main-info.cook-it .directions {
+  width: 100%;
+  height: null;
+  margin: 1rem auto;
+  padding: 2rem;
+  background: #669999;
+  text-align: center;
+  border: 1px solid #003333;
+  border-top: null;
+  border-bottom: null;
+  border-right: null;
+  border-left: null;
+  border-radius: 10px;
+  box-shadow: null;
+}
+.main-info.cook-it .description {
+  display: flex;
+  flex-direction: row-reverse;
+  width: null;
+  height: null;
+  margin: null;
+  padding: 1rem;
+  background: #669999;
+  border: 1px solid #003333;
+}
+@media (max-width: 500px) {
+  .main-info.cook-it .description {
+    flex-direction: column;
+  }
+}
+.main-info.cook-it .description img {
+  width: 30%;
+  height: 200px;
+  margin: null;
+  padding: null;
+  background: null;
+}
+@media (max-width: 500px) {
+  .main-info.cook-it .description img {
+    width: 100%;
+    height: 220px;
+    margin: auto;
+    padding: 0 2rem 0 0;
+    background: null;
+  }
 }

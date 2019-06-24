@@ -4,18 +4,17 @@
         flex-direction: row;
     }
 
-    display : block;
-    .create-element(@width: 15%,
-        @padding: 1rem,
-        @background : @main-color);
+    display                 : block;
+    .position-element(@width: 15%, @padding: 1rem, @background : @main-color);
 
     .logo {
         @media @mobile {
             position: unset;
         }
-        position   : fixed;
-        .create-element(@margin:@zero, @padding:1rem 2rem);
-        .set-text(@size:1.4rem, @color:white, @shadow:1px 1px @shadow-dark,@align:center);
+
+        .fix-position();
+        .position-element(@margin: @zero, @padding: 1rem 2rem);
+        .set-text(@size          : 1.4rem, @color: white, @shadow: 1px 1px @shadow-dark, @align: center);
     }
 
     .nav-buttons {
@@ -23,24 +22,20 @@
             position: unset;
         }
 
-        text-align: center;
-        position  : fixed;
-        top       : 60px;
+        text-align        : center;
+        .fix-position(@top: 60px);
 
         a {
-            display        : block;
-            color          : white;
-            text-decoration: none;
-            text-shadow    : 2px 2px rgba(0, 0, 0, .2);
-            border         : 1px solid @deep-teal;
-            padding        : 1rem;
-            border-radius  : .7rem;
+            display                    : block;
+            .position-element(@padding : 1rem);
+            .set-text(@color           : @font-color, @shadow: @shadow-lite, @decor: none);
+            .set-border(@border        : 1px solid @deep-teal, @rounding: .7rem);
 
             &:hover {
-                border    : 1px solid darken(@deep-teal, 2%);
-                background: darken(@patina, 10%);
-                color     : @deep-teal;
-                cursor    : pointer;
+                .position-element(@background: darken(@second-color, 10%));
+                .set-text(@color             : @main-color);
+                .set-border(1px solid darken(@main-color, 2%));
+                cursor: pointer;
             }
         }
     }

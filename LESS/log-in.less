@@ -1,37 +1,39 @@
 .login-box {
 
-    margin    : 90px auto 372px;
-    border    : 1px solid black;
-    background: white;
-    display   : flex;
+    display: flex;
+    .position-element(@margin : 10rem auto,
+        @background: white);
+
+    border: 1px solid black;
 
     @media @mobile {
         width : 95%;
         margin: 10px auto;
-        ;
     }
 
-    margin     : 90px auto;
-    border     : 1px solid black;
-    background : white;
-    display    : flex;
-
+    display       : flex;
     flex-direction: column;
 
+    .position-element(@margin : 90px auto,
+        @background : white);
+
+    border : 1px solid black;
+
+
     h2 {
-        text-align: center;
-        font-size : 3rem;
-        background: @deep-teal;
-        color     : white;
-        padding   : 10px 120px;
+        .position-element(@background: @main-color,
+            @padding : 10px 120px);
+        .set-text(@size : 3rem, @align: center,
+            @color : @font-color);
 
     }
 }
 
 form {
-    padding   : 1rem;
-    width     : 100%;
-    margin    : 1rem auto;
+    .set-position(@width : 100%,
+        @margin : 1rem auto,
+        @padding: 1rem);
+
     text-align: center;
 
     p {
@@ -39,18 +41,17 @@ form {
     }
 
     input {
-        margin : 1rem auto;
-        padding: 1rem;
-        height : 1rem;
-        width  : 90%;
+
+        .set-position(@width : 90%, @height : 1rem,
+            @margin : 1rem auto, @padding: 1rem);
     }
 
     .login-btn {
-        width        : 80%;
-        margin       : 1rem auto;
-        background   : @patina;
-        color        : white;
-        font-size    : 1.3rem;
+        .set-position(@width: 80%, @margin : 1rem auto,
+            @background: @second-color);
+        .set-text(@color : @font-color,
+            @size: 1.3rem);
+
         border-radius: 8px;
 
         &:hover {
@@ -61,13 +62,14 @@ form {
     }
 
     a {
-        display        : flex;
-        margin-bottom  : 10px;
-        text-decoration: none;
-        color          : black;
+        display: flex;
+
+        margin-bottom: 10px;
+
+        .set-text(@decor: none, @color, black);
 
         &:hover {
-            color: #da3309;
+            color: @accent;
         }
     }
 }

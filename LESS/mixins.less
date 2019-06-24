@@ -1,0 +1,33 @@
+.position-element(@display: null, @width: null, @height: null, @margin: null, @padding: null, @background: null) {
+    width     : @width;
+    height    : @height;
+    margin    : @margin;
+    padding   : @padding;
+    background: @background;
+}
+
+.set-border(@border: null, @border-t: null, @border-b: null, @border-r: null, @border-l: null, @rounding: null, @shadow: null) {
+    border       : @border;
+    border-top   : @border-t;
+    border-bottom: @border-b;
+    border-right : @border-r;
+    border-left  : @border-l;
+    border-radius: @rounding;
+    box-shadow   : @shadow;
+}
+
+.set-text(@size: null, @color: null, @shadow: null, @align: null, @decor: null) {
+    font-size      : @size;
+    color          : @color;
+    text-shadow    : @shadow;
+    text-align     : @align;
+    text-decoration: @decor;
+}
+
+.fix-position(@top: null, @bottom: null, @right: null, @left: null) {
+    position: fixed;
+    top     : @top;
+    bottom  : @bottom;
+    right   : @right;
+    left    : @left;
+}

@@ -1,47 +1,24 @@
 .landing {
-    width  : 95%;
-    padding: 1rem;
-    margin : 0 auto;
+    .position-element(@width : 95%, @padding: 1rem, @margin : 0 auto);
 
     .main-info {
-        @media @mobile{
-            margin:1rem auto;
+        @media @mobile {
+            margin: 1rem auto;
         }
-        background   : white;
-        border       : 1px solid grey;
-        border-radius: .5rem;
+
+        background          : white;
+        .set-border(@border : 1px solid grey, @rounding : .5rem);
 
         h1 {
-            font-size : 28px;
-            text-align: end;
-            color     : white;
-            background: @deep-teal;
-            padding   : 10px;
+            .position-element(@background: @main-color,
+                @padding    : 10px);
+            .set-text(@size : 28px, @align: end, @color : white);
         }
 
         p {
-            text-align: center;
-            font-size : 18px;
+            .set-text(@align: center, @size : 18px);
         }
 
-        .btn {
-            width          : 30%;
-            border         : 1px solid @deep-teal;
-            background     : @patina;
-            border-radius  : 5px;
-            color          : white;
-            text-shadow    : 1px 1px black;
-            text-align     : center;
-            justify-content: end;
-            margin         : 10px auto;
-            padding        : 5px;
-
-            &:hover {
-                background: @deep-teal;
-                color     : white;
-                cursor    : pointer;
-            }
-        }
 
     }
 
@@ -53,44 +30,20 @@
             flex-direction: column;
         }
 
-
-        .btn {
-            width          : 25%;
-            border         : 1px solid @deep-teal;
-            background     : @patina;
-            border-radius  : 5px;
-            color          : white;
-            text-shadow    : 1px 1px black;
-            text-align     : center;
-            justify-content: end;
-            margin         : 10px auto;
-            padding        : 5px;
-
-            &:hover {
-                background: @deep-teal;
-                color     : white;
-                cursor    : pointer;
-            }
-        }
-
         .info {
-            @media @mobile{
-                margin:1rem auto;
-                width: 100%;
+            @media @mobile {
+                margin: 1rem auto;
+                width : 100%;
             }
-            margin       : 1rem auto;
-            width        : 30%;
-            border       : 1px solid grey;
-            background   : white;
-            border-radius: .5rem;
+
+
+            .position-element(@background: white, @width : 30%, @margin : 1rem auto);
+            .set-border(@border          : 1px solid grey, @rounding : .5rem);
 
             h3 {
-                text-align   : center;
-                padding      : 7px;
-                font-size    : 24px;
-                background   : @deep-teal;
-                border-radius: .5rem .5rem 0 0;
-                color        : white;
+                .position-element(@padding : 7px, @background : @deep-teal);
+                .set-text(@align           : center, @size : 24px, @color : white);
+                .set-border(@rounding      : .5rem .5rem 0 0);
             }
 
             p {
@@ -99,77 +52,19 @@
         }
     }
 
-}
+    .btn {
+        .position-element(@width : 30%, @margin : 10px auto,
+            @background : @second-color, @padding : 5px);
 
-//Cook it
-.main-info.cook-it {
-    padding: 1rem;
+        .set-text(@color : white, @shadow : 1px 1px black,
+            @align            : center);
+        .set-border(@rounding : 5px, @border : 1px solid @main-color);
 
-    @media @mobile {
-        h1 {
-            text-align: center;
-        }
-    }
+        justify-content: end;
 
-    .recipe {
-        display       : flex;
-        flex-direction: row;
-        padding       : 1rem;
-
-        .steps {
-            width          : 45%;
-            padding        : 0 2rem;
-            list-style-type: disc;
-
-            @media @mobile {
-                position: absolute;
-                padding: 14rem 8rem 0 0;
-                width: 399px;
-            }
+        a {
+            .set-text(@color: @font-color, @decor: none);
         }
 
-        @media @mobile {
-            img {
-                width: 100%;
-                height: 210px;
-            }
-        }
-
-    }
-
-    .directions {
-        padding      : 2rem;
-        width        : 100%;
-        margin       : 1rem auto;
-        text-align   : center;
-        border-radius: 10px;
-        border       : 1px solid @deep-teal;
-        background   : @patina;
-    }
-
-
-    .description {
-        padding       : 1rem;
-        border        : 1px solid @deep-teal;
-        background    : @patina;
-        display       : flex;
-        flex-direction: row-reverse;
-
-        @media @mobile {
-            margin-top: 50rem;
-            flex-direction: column;
-        }
-
-        img {
-            width : 30%;
-            height: 200px;
-
-            @media @mobile {
-                width: 100%;
-                height: 220px;
-                margin: auto;
-                padding-bottom: 2rem;
-            }
-        }
     }
 }

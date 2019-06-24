@@ -1,17 +1,16 @@
 .top-five {
-
-    width        : 95%;
-    background   : @patina;
-    border       : 1px solid grey;
-    border-radius: 1rem;
-    padding      : 10px;
-    margin       : 0 auto;
+    .create-element(@width: 95%,
+        @margin: @zero,
+        @padding: 10px,
+        @second-color);
+    .set-border(@border: 1px solid @second-color,
+        @rounding: 1rem);
 
     .bar {
         h1 {
-            font-size  : 24px;
-            text-shadow: 1px 1px rgba(0, 0, 0, .5);
-            color      : @deep-teal;
+            .set-text(24px,
+                @main-color,
+                1px 1px @shadow-dark);
         }
 
     }
@@ -19,12 +18,11 @@
 }
 
 .cards {
-    display: flex;
-
     @media @mobile {
         flex-direction: column;
     }
 
+    display        : flex;
     justify-content: center;
 
     .card {
@@ -33,25 +31,23 @@
             margin: 10px auto;
         }
 
-        margin       : 5px;
-        width        : 18%;
-        background   : #f0f0f0;
-        border       : 1px solid grey;
-        border-radius: 5px;
-        box-shadow   : 5px 5px 5px rgba(0, 0, 0, .2);
+        .create-element(@width: 18%,
+            @margin: 5px,
+            @background: #f0f0f0);
+        .set-border(1px solid @second-color,
+            5px,
+            5px 5px 5px @shadow-lite);
 
         .img {
-            width        : 100%;
-            height       : 30px;
-            background   : @deep-teal;
-            border-radius: 4px 4px 0 0;
-            border-bottom: 1px solid darken(@deep-teal, 5%);
+            .create-element(@width: 100%,
+                @height: 30px,
+                @background : @main-color);
+            .set-border(@border-b: 1px solid darken(@main-color, 5%),
+                @rounding: 4px 4px 0 0);
 
             p {
-                color      : white;
-                font-size  : 20px;
-                text-align : center;
-                padding-top: 5px;
+                .set-text(@size: 20px, @color: white, @align: center);
+                padding-top    : 5px;
             }
         }
 
@@ -63,226 +59,10 @@
             width: 40%;
 
             &:hover {
-                background: @deep-teal;
+                background: @main-color;
                 color     : white;
                 cursor    : pointer;
             }
-        }
-    }
-}
-
-@media @mobile {
-    flex-direction: column;
-}
-
-// About Page Body
-
-.dev-info {
-    border: 1px solid black;
-    width: 95%;
-    display: flex;
-    margin: 1rem auto;
-    background: white;
-    border-radius: 10px;
-    padding: 1rem;
-
-    @media @mobile{
-        padding-bottom: 11rem;
-    }
-  }
-  .dev-info h2 {
-    display: block;
-    width: 100%;
-    padding: 1rem;
-    font-size: 2rem;
-    background: #669999;
-    border: 1px solid #003333;
-    border-radius: 10px;
-    color: white;
-    order: -1;
-    text-align: center;
-}
-    
-  .dev-info img {
-    margin: 10px;
-    box-sizing: unset;
-    border: 3px solid grey;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-    width: 300px;
-    height: 300px;
-    border-radius: 5rem;
-  }
-  .dev-info .dev-text {
-    font-size: 1.3rem;
-    order: 1;
-
-    @media @mobile {
-        position: absolute;
-        top: 49rem;
-        width: 320px;
-    }
-}
-   
-
-  .dev-info.a {
-    flex-direction: row-reverse;
-
-    @media @mobile {
-        .dev-text {
-            position: absolute;
-            top: 86rem;
-            width: 320px;
-        }
-    }
-}
-
-@media @mobile {
-    h1 {
-        text-align: center;
-        font-size: 2rem;
-        margin-top: 1rem;
-    }
-}
-
-
-  // Sign In Page
-
-.bd-info {
-    border        : 1px solid black;
-    margin-bottom : 4rem;
-    margin-left   : 16rem;
-    padding-bottom: 3rem;
-    width         : 79%;
-    display       : flex;
-
-    h2 {
-        font-size: 2rem;
-        padding  : 2rem 0 5rem 20rem;
-
-        span {
-            background: @deep-teal;
-            color     : white;
-        }
-    }
-
-    img {
-        width : 17%;
-        height: 0%;
-        margin: 5rem 3rem 0 8rem;
-    }
-
-    .bd-text {
-        font-size: 1.3rem;
-
-    }
-}
-
-.al-info {
-    border        : 1px solid black;
-    margin-bottom : 4rem;
-    margin-left   : 16rem;
-    padding-bottom: 3rem;
-    width         : 79%;
-    display       : flex;
-
-    h2 {
-        font-size: 2rem;
-        padding  : 2rem 0 5rem 20rem;
-
-        span {
-            background: @deep-teal;
-            color     : white;
-        }
-    }
-
-    img {
-        width : 17%;
-        height: 0%;
-        margin: 5rem 3rem 0 8rem;
-    }
-
-    .al-text {
-        font-size: 1.3rem;
-
-    }
-}
-
-// Sign In Page
-
-
-.about-container {
-    height: 879px;
-}
-
-.login-box {
-
-    margin: 90px auto 372px;
-    border: 1px solid black;
-    background: white;
-    display: flex;
-    @media @mobile {
-        width : 95%;
-        margin: 10px auto;
-        ;
-    }
-
-    margin        : 90px auto;
-    border        : 1px solid black;
-    background    : white;
-    display       : flex;
-
-    flex-direction: column;
-
-    h2 {
-        text-align: center;
-        font-size : 3rem;
-        background: @deep-teal;
-        color     : white;
-        padding   : 10px 120px;
-
-    }
-}
-
-form {
-    padding   : 1rem;
-    width     : 100%;
-    margin    : 1rem auto;
-    text-align: center;
-
-    p {
-        font-size: 1.6rem;
-    }
-
-    input {
-        margin : 1rem auto;
-        padding: 1rem;
-        height : 1rem;
-        width  : 90%;
-    }
-
-    .login-btn {
-        width        : 80%;
-        margin       : 1rem auto;
-        background   : @patina;
-        color        : white;
-        font-size    : 1.3rem;
-        border-radius: 8px;
-
-        &:hover {
-            background: @deep-teal;
-            color     : white;
-            cursor    : pointer;
-        }
-    }
-
-    a {
-        display        : flex;
-        margin-bottom  : 10px;
-        text-decoration: none;
-        color          : black;
-
-        &:hover {
-            color: #da3309;
         }
     }
 }

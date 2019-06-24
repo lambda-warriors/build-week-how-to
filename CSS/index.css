@@ -129,6 +129,9 @@ table {
 * {
   box-sizing: border-box;
 }
+@media (max-width: 500px) {
+  flex-direction: column;
+}
 html {
   background: #d0d0d0;
 }
@@ -136,40 +139,39 @@ body {
   display: flex;
   flex-direction: row-reverse;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   body {
     flex-direction: column;
     width: 100%;
   }
 }
 .nav {
-  width: 15%;
-  background: #003333;
-  box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
-  padding: 1rem;
   display: block;
+  width: 15%;
+  height: null;
+  margin: null;
+  padding: 1rem;
+  background: #003333;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .nav {
     width: 100%;
     flex-direction: row;
   }
 }
-@media (max-width:500px) {
-  .nav {
-    flex-direction: row;
-  }
-}
 .nav .logo {
   position: fixed;
-  color: whitesmoke;
+  width: null;
+  height: null;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  background: null;
   font-size: 1.4rem;
-  width: 100%;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
-  padding: 1rem;
-  margin-left: 1.2rem;
+  color: white;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .nav .logo {
     position: unset;
   }
@@ -179,7 +181,7 @@ body {
   position: fixed;
   top: 60px;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .nav .nav-buttons {
     position: unset;
   }
@@ -202,269 +204,9 @@ body {
 .close {
   display: none;
 }
-.about-nav {
-  width: 43%;
-  background: #003333;
-  box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
-  padding: 1rem;
-  display: block;
-}
-.about-nav .about-logo {
-  position: fixed;
-  color: whitesmoke;
-  font-size: 1.4rem;
-  width: 100%;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
-  padding: 1rem;
-  margin-left: 1.2rem;
-}
-.about-nav .about-nav-buttons {
-  text-align: center;
-  position: fixed;
-  top: 60px;
-}
-.about-nav a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
-  border: 1px solid #003333;
-  padding: 1rem;
-  border-radius: 0.7rem;
-}
-.about-nav a:hover {
-  border: 1px solid #002929;
-  background: #527a7a;
-  color: #003333;
-  cursor: pointer;
-}
-.nav .login {
-  height: 879px;
-}
 .about {
   width: 95%;
   margin: 0 auto;
-}
-.landing {
-  width: 95%;
-  padding: 1rem;
-  margin: 0 auto;
-}
-.landing .main-info {
-  background: white;
-  border: 1px solid grey;
-  border-radius: 0.5rem;
-}
-@media (max-width:500px) {
-  .landing .main-info {
-    margin: 1rem auto;
-  }
-}
-.landing .main-info h1 {
-  font-size: 28px;
-  text-align: end;
-  color: white;
-  background: #003333;
-  padding: 10px;
-}
-.landing .main-info p {
-  text-align: center;
-  font-size: 18px;
-}
-.landing .main-info .btn {
-  width: 30%;
-  border: 1px solid #003333;
-  background: #669999;
-  border-radius: 5px;
-  color: white;
-  text-shadow: 1px 1px black;
-  text-align: center;
-  justify-content: end;
-  margin: 10px auto;
-  padding: 5px;
-}
-.landing .main-info .btn:hover {
-  background: #003333;
-  color: white;
-  cursor: pointer;
-}
-.landing .catagories {
-  display: flex;
-  flex-wrap: wrap;
-}
-@media (max-width:500px) {
-  .landing .catagories {
-    flex-direction: column;
-  }
-}
-.landing .catagories .btn {
-  width: 25%;
-  border: 1px solid #003333;
-  background: #669999;
-  border-radius: 5px;
-  color: white;
-  text-shadow: 1px 1px black;
-  text-align: center;
-  justify-content: end;
-  margin: 10px auto;
-  padding: 5px;
-}
-.landing .catagories .btn:hover {
-  background: #003333;
-  color: white;
-  cursor: pointer;
-}
-.landing .catagories .info {
-  margin: 1rem auto;
-  width: 30%;
-  border: 1px solid grey;
-  background: white;
-  border-radius: 0.5rem;
-}
-@media (max-width:500px) {
-  .landing .catagories .info {
-    margin: 1rem auto;
-    width: 100%;
-  }
-}
-.landing .catagories .info h3 {
-  text-align: center;
-  padding: 7px;
-  font-size: 24px;
-  background: #003333;
-  border-radius: 0.5rem 0.5rem 0 0;
-  color: white;
-}
-.landing .catagories .info p {
-  padding: 5px;
-}
-.main-info.cook-it {
-  padding: 1rem;
-}
-@media (max-width:500px) {
-  .main-info.cook-it h1 {
-    text-align: center;
-  }
-}
-.main-info.cook-it .recipe {
-  display: flex;
-  flex-direction: row;
-  padding: 1rem;
-}
-.main-info.cook-it .recipe .steps {
-  width: 45%;
-  padding: 0 2rem;
-  list-style-type: disc;
-}
-@media (max-width:500px) {
-  .main-info.cook-it .recipe .steps {
-    position: absolute;
-    padding: 14rem 8rem 0 0;
-    width: 399px;
-  }
-}
-@media (max-width:500px) {
-  .main-info.cook-it .recipe img {
-    width: 100%;
-    height: 210px;
-  }
-}
-.main-info.cook-it .directions {
-  padding: 2rem;
-  width: 100%;
-  margin: 1rem auto;
-  text-align: center;
-  border-radius: 10px;
-  border: 1px solid #003333;
-  background: #669999;
-}
-.main-info.cook-it .description {
-  padding: 1rem;
-  border: 1px solid #003333;
-  background: #669999;
-  display: flex;
-  flex-direction: row-reverse;
-}
-@media (max-width:500px) {
-  .main-info.cook-it .description {
-    margin-top: 50rem;
-    flex-direction: column;
-  }
-}
-.main-info.cook-it .description img {
-  width: 30%;
-  height: 200px;
-}
-@media (max-width:500px) {
-  .main-info.cook-it .description img {
-    width: 100%;
-    height: 220px;
-    margin: auto;
-    padding-bottom: 2rem;
-  }
-}
-.top-five {
-  width: 95%;
-  background: #669999;
-  border: 1px solid grey;
-  border-radius: 1rem;
-  padding: 10px;
-  margin: 0 auto;
-}
-.top-five .bar h1 {
-  font-size: 24px;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
-  color: #003333;
-}
-.cards {
-  display: flex;
-  justify-content: center;
-}
-@media (max-width:500px) {
-  .cards {
-    flex-direction: column;
-  }
-}
-.cards .card {
-  margin: 5px;
-  width: 18%;
-  background: #f0f0f0;
-  border: 1px solid grey;
-  border-radius: 5px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-}
-@media (max-width:500px) {
-  .cards .card {
-    width: 95%;
-    margin: 10px auto;
-  }
-}
-.cards .card .img {
-  width: 100%;
-  height: 30px;
-  background: #003333;
-  border-radius: 4px 4px 0 0;
-  border-bottom: 1px solid #00191a;
-}
-.cards .card .img p {
-  color: white;
-  font-size: 20px;
-  text-align: center;
-  padding-top: 5px;
-}
-.cards .card p {
-  padding: 5px;
-}
-.cards .card .btn {
-  width: 40%;
-}
-.cards .card .btn:hover {
-  background: #003333;
-  color: white;
-  cursor: pointer;
-}
-@media (max-width:500px) {
-  flex-direction: column;
 }
 .dev-info {
   border: 1px solid black;
@@ -474,11 +216,6 @@ body {
   background: white;
   border-radius: 10px;
   padding: 1rem;
-}
-@media (max-width:500px) {
-  .dev-info {
-    padding-bottom: 11rem;
-  }
 }
 .dev-info h2 {
   display: block;
@@ -505,80 +242,18 @@ body {
   font-size: 1.3rem;
   order: 1;
 }
-@media (max-width:500px) {
-  .dev-info .dev-text {
-    position: absolute;
-    top: 49rem;
-    width: 320px;
-  }
-}
 .dev-info.a {
   flex-direction: row-reverse;
 }
-@media (max-width:500px) {
-  .dev-info.a .dev-text {
-    position: absolute;
-    top: 86rem;
-    width: 320px;
+@media (max-width: 500px) {
+  .dev-info {
+    display: block;
   }
-}
-@media (max-width:500px) {
   h1 {
     text-align: center;
     font-size: 2rem;
     margin-top: 1rem;
   }
-}
-.bd-info {
-  border: 1px solid black;
-  margin-bottom: 4rem;
-  margin-left: 16rem;
-  padding-bottom: 3rem;
-  width: 79%;
-  display: flex;
-}
-.bd-info h2 {
-  font-size: 2rem;
-  padding: 2rem 0 5rem 20rem;
-}
-.bd-info h2 span {
-  background: #003333;
-  color: white;
-}
-.bd-info img {
-  width: 17%;
-  height: 0%;
-  margin: 5rem 3rem 0 8rem;
-}
-.bd-info .bd-text {
-  font-size: 1.3rem;
-}
-.al-info {
-  border: 1px solid black;
-  margin-bottom: 4rem;
-  margin-left: 16rem;
-  padding-bottom: 3rem;
-  width: 79%;
-  display: flex;
-}
-.al-info h2 {
-  font-size: 2rem;
-  padding: 2rem 0 5rem 20rem;
-}
-.al-info h2 span {
-  background: #003333;
-  color: white;
-}
-.al-info img {
-  width: 17%;
-  height: 0%;
-  margin: 5rem 3rem 0 8rem;
-}
-.al-info .al-text {
-  font-size: 1.3rem;
-}
-.about-container {
-  height: 879px;
 }
 .login-box {
   margin: 90px auto 372px;
@@ -588,7 +263,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .login-box {
     width: 95%;
     margin: 10px auto;
@@ -637,6 +312,246 @@ form a {
 }
 form a:hover {
   color: #da3309;
+}
+.main-info.cook-it {
+  padding: 1rem;
+}
+@media (max-width: 500px) {
+  .main-info.cook-it h1 {
+    text-align: center;
+  }
+}
+.main-info.cook-it .recipe {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+.main-info.cook-it .recipe .steps {
+  width: 45%;
+  padding: 0 2rem;
+  list-style-type: disc;
+}
+@media (max-width: 500px) {
+  .main-info.cook-it .recipe .steps {
+    position: absolute;
+    padding: 14rem 8rem 0 0;
+    width: 399px;
+  }
+}
+@media (max-width: 500px) {
+  .main-info.cook-it .recipe img {
+    width: 100%;
+    height: 210px;
+  }
+}
+.main-info.cook-it .directions {
+  padding: 2rem;
+  width: 100%;
+  margin: 1rem auto;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #003333;
+  background: #669999;
+}
+.main-info.cook-it .description {
+  padding: 1rem;
+  border: 1px solid #003333;
+  background: #669999;
+  display: flex;
+  flex-direction: row-reverse;
+}
+@media (max-width: 500px) {
+  .main-info.cook-it .description {
+    margin-top: 50rem;
+    flex-direction: column;
+  }
+}
+.main-info.cook-it .description img {
+  width: 30%;
+  height: 200px;
+}
+@media (max-width: 500px) {
+  .main-info.cook-it .description img {
+    width: 100%;
+    height: 220px;
+    margin: auto;
+    padding-bottom: 2rem;
+  }
+}
+.landing {
+  width: 95%;
+  padding: 1rem;
+  margin: 0 auto;
+}
+.landing .main-info {
+  background: white;
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+}
+@media (max-width: 500px) {
+  .landing .main-info {
+    margin: 1rem auto;
+  }
+}
+.landing .main-info h1 {
+  font-size: 28px;
+  text-align: end;
+  color: white;
+  background: #003333;
+  padding: 10px;
+}
+.landing .main-info p {
+  text-align: center;
+  font-size: 18px;
+}
+.landing .main-info .btn {
+  width: 30%;
+  border: 1px solid #003333;
+  background: #669999;
+  border-radius: 5px;
+  color: white;
+  text-shadow: 1px 1px black;
+  text-align: center;
+  justify-content: end;
+  margin: 10px auto;
+  padding: 5px;
+}
+.landing .main-info .btn:hover {
+  background: #003333;
+  color: white;
+  cursor: pointer;
+}
+.landing .catagories {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .landing .catagories {
+    flex-direction: column;
+  }
+}
+.landing .catagories .btn {
+  width: 25%;
+  border: 1px solid #003333;
+  background: #669999;
+  border-radius: 5px;
+  color: white;
+  text-shadow: 1px 1px black;
+  text-align: center;
+  justify-content: end;
+  margin: 10px auto;
+  padding: 5px;
+  text-decoration: none;
+}
+.landing .catagories .btn:hover {
+  background: #003333;
+  color: white;
+  cursor: pointer;
+}
+.landing .catagories .info {
+  margin: 1rem auto;
+  width: 30%;
+  border: 1px solid grey;
+  background: white;
+  border-radius: 0.5rem;
+}
+@media (max-width: 500px) {
+  .landing .catagories .info {
+    margin: 1rem auto;
+    width: 100%;
+  }
+}
+.landing .catagories .info h3 {
+  text-align: center;
+  padding: 7px;
+  font-size: 24px;
+  background: #003333;
+  border-radius: 0.5rem 0.5rem 0 0;
+  color: white;
+}
+.landing .catagories .info p {
+  padding: 5px;
+}
+.top-five {
+  width: 95%;
+  height: #669999;
+  margin: 0 auto;
+  padding: 10px;
+  background: null;
+  border: 1px solid #669999;
+  border-top: null;
+  border-bottom: null;
+  border-right: null;
+  border-left: null;
+  border-radius: 1rem;
+  box-shadow: null;
+}
+.top-five .bar h1 {
+  font-size: 24px;
+  color: #003333;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  text-align: null;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .cards {
+    flex-direction: column;
+  }
+}
+.cards .card {
+  width: 18%;
+  height: null;
+  margin: 5px;
+  padding: null;
+  background: #f0f0f0;
+  border: 1px solid #669999;
+  border-top: 5px;
+  border-bottom: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  border-right: null;
+  border-left: null;
+  border-radius: null;
+  box-shadow: null;
+}
+@media (max-width: 500px) {
+  .cards .card {
+    width: 95%;
+    margin: 10px auto;
+  }
+}
+.cards .card .img {
+  width: 100%;
+  height: 30px;
+  margin: null;
+  padding: null;
+  background: #003333;
+  border: null;
+  border-top: null;
+  border-bottom: 1px solid #00191a;
+  border-right: null;
+  border-left: null;
+  border-radius: 4px 4px 0 0;
+  box-shadow: null;
+}
+.cards .card .img p {
+  font-size: 20px;
+  color: white;
+  text-shadow: null;
+  text-align: center;
+  padding-top: 5px;
+}
+.cards .card p {
+  padding: 5px;
+}
+.cards .card .btn {
+  width: 40%;
+}
+.cards .card .btn:hover {
+  background: #003333;
+  color: white;
+  cursor: pointer;
 }
 .copy {
   font-size: 1rem;

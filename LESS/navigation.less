@@ -28,15 +28,16 @@
         a {
             display                    : block;
             .position-element(@padding : 1rem);
-            .set-text(@color           : @font-color, @shadow: @shadow-lite, @decor: none);
-            .set-border(@border        : 1px solid @deep-teal, @rounding: .7rem);
+            .set-text(@color           : white, @shadow: @shadow-lite, @decor: none);
+            .set-border(@border        : 1px solid @main-color, @rounding: .7rem);
 
-            &:hover {
-                .position-element(@background: darken(@second-color, 10%));
-                .set-text(@color             : @main-color);
-                .set-border(1px solid darken(@main-color, 2%));
-                cursor: pointer;
-            }
+        }
+
+        .hover {
+            .position-element(@background: darken(@second-color, 10%));
+            .set-text(@color             : @accent-color);
+            .set-border(1px solid darken(@main-color, 2%));
+            cursor: pointer;
         }
     }
 }

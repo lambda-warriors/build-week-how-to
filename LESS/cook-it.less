@@ -27,7 +27,7 @@
             list-style-type         : disc;
 
             @media @mobile {
-                width : 100%;
+                width     : 100%;
                 text-align: center;
             }
         }
@@ -39,7 +39,7 @@
             @margin : 1rem auto, @background: @second-color);
 
         text-align           : center;
-        .set-border(@rounding: 10px, @border : 1px solid @deep-teal);
+        .set-border(@rounding: 10px, @border : 1px solid @main-color);
     }
 
 
@@ -49,7 +49,11 @@
 
         .position-element(@padding : 1rem, @background: @second-color);
 
-        border: 1px solid @deep-teal;
+        p {
+            color: black;
+        }
+
+        border: 1px solid @main-color;
 
         @media @mobile {
             flex-direction: column;

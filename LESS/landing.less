@@ -41,7 +41,7 @@
             .set-border(@border          : 1px solid grey, @rounding : .5rem);
 
             h3 {
-                .position-element(@padding : 7px, @background : @deep-teal);
+                .position-element(@padding : 7px, @background : @main-color);
                 .set-text(@align           : center, @size : 24px, @color : white);
                 .set-border(@rounding      : .5rem .5rem 0 0);
             }
@@ -49,22 +49,35 @@
             p {
                 padding: 5px;
             }
+
+            .btn {
+                a {
+                    color: white;
+                }
+            }
+
+            .hover {
+                background: @main-color;
+
+                a {
+                    color: @accent-color;
+                }
+            }
         }
     }
 
     .btn {
         .position-element(@width : 30%, @margin : 10px auto,
             @background : @second-color, @padding : 5px);
-
         .set-text(@color : white, @shadow : 1px 1px black,
             @align            : center);
         .set-border(@rounding : 5px, @border : 1px solid @main-color);
-
         justify-content: end;
 
-        a {
-            .set-text(@color: @font-color, @decor: none);
-        }
+    }
 
+    .hover {
+        background: @main-color;
+        color     : @accent-color;
     }
 }

@@ -24,13 +24,13 @@
         .position-element(@background: @main-color,
             @padding : 10px 120px);
         .set-text(@size : 3rem, @align: center,
-            @color : @font-color);
+            @color : white);
 
     }
 }
 
 form {
-    .set-position(@width : 100%,
+    .position-element(@width : 100%,
         @margin : 1rem auto,
         @padding: 1rem);
 
@@ -42,23 +42,24 @@ form {
 
     input {
 
-        .set-position(@width : 90%, @height : 1rem,
+        .position-element(@width : 90%, @height : 1rem,
             @margin : 1rem auto, @padding: 1rem);
     }
 
-    .login-btn {
-        .set-position(@width: 80%, @margin : 1rem auto,
-            @background: @second-color);
-        .set-text(@color : @font-color,
+    .btn {
+        .position-element(@width: 80%, @margin : 1rem auto,
+            @background: @main-color);
+        .set-text(@color : white,
             @size: 1.3rem);
 
         border-radius: 8px;
 
-        &:hover {
-            background: @deep-teal;
-            color     : white;
-            cursor    : pointer;
-        }
+    }
+
+    .hover {
+        background: @main-color;
+        color     : @accent-color;
+        cursor    : pointer;
     }
 
     a {
@@ -66,10 +67,11 @@ form {
 
         margin-bottom: 10px;
 
-        .set-text(@decor: none, @color, black);
+        .set-text(@decor: none, @color: black);
 
-        &:hover {
-            color: @accent;
+        .hover {
+            color: @accent-color;
         }
     }
+
 }

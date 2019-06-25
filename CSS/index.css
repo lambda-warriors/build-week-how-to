@@ -129,6 +129,20 @@ table {
 * {
   box-sizing: border-box;
 }
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+span {
+  font-size: null;
+  color: #55596d;
+  text-shadow: null;
+  text-align: null;
+  text-decoration: none;
+}
 @media (max-width: 500px) {
   flex-direction: column;
 }
@@ -151,7 +165,7 @@ body {
   height: null;
   margin: null;
   padding: 1rem;
-  background: #003333;
+  background: #0c3c78;
 }
 @media (max-width: 500px) {
   .nav {
@@ -202,11 +216,11 @@ body {
   padding: 1rem;
   background: null;
   font-size: null;
-  color: #f0f0f0;
+  color: white;
   text-shadow: rgba(0, 0, 0, 0.2);
   text-align: null;
   text-decoration: none;
-  border: 1px solid #003333;
+  border: 1px solid #0c3c78;
   border-top: null;
   border-bottom: null;
   border-right: null;
@@ -214,18 +228,18 @@ body {
   border-radius: 0.7rem;
   box-shadow: null;
 }
-.nav .nav-buttons a:hover {
+.nav .nav-buttons .hover {
   width: null;
   height: null;
   margin: null;
   padding: null;
-  background: #527a7a;
+  background: #134984;
   font-size: null;
-  color: #003333;
+  color: #bb1333;
   text-shadow: null;
   text-align: null;
   text-decoration: null;
-  border: 1px solid #002929;
+  border: 1px solid #0b376f;
   border-top: null;
   border-bottom: null;
   border-right: null;
@@ -265,13 +279,13 @@ body {
   height: null;
   margin: null;
   padding: 1rem;
-  background: #669999;
+  background: #1a61b0;
   font-size: 2rem;
-  color: #f0f0f0;
+  color: white;
   text-shadow: null;
   text-align: center;
   text-decoration: null;
-  border: 1px solid #003333;
+  border: 1px solid #0c3c78;
   border-top: null;
   border-bottom: null;
   border-right: null;
@@ -313,15 +327,15 @@ body {
   }
 }
 .login-box {
+  margin: 10rem auto;
+  display: flex;
+  flex-direction: column;
   width: null;
   height: null;
-  margin: 10rem auto;
-  padding: null;
-  display: flex;
   margin: 90px auto;
+  padding: null;
   background: white;
   border: 1px solid black;
-  flex-direction: column;
 }
 @media (max-width: 500px) {
   .login-box {
@@ -330,48 +344,64 @@ body {
   }
 }
 .login-box h2 {
-  text-align: center;
-  font-size: 3rem;
-  background: #003333;
-  color: white;
+  width: null;
+  height: null;
+  margin: null;
   padding: 10px 120px;
+  background: #0c3c78;
+  font-size: 3rem;
+  color: white;
+  text-shadow: null;
+  text-align: center;
+  text-decoration: null;
 }
 form {
-  padding: 1rem;
   width: 100%;
+  height: null;
   margin: 1rem auto;
+  padding: 1rem;
+  background: null;
   text-align: center;
 }
 form p {
   font-size: 1.6rem;
 }
 form input {
+  width: 90%;
+  height: 1rem;
   margin: 1rem auto;
   padding: 1rem;
-  height: 1rem;
-  width: 90%;
+  background: null;
 }
-form .login-btn {
+form .btn {
   width: 80%;
+  height: null;
   margin: 1rem auto;
-  background: #669999;
-  color: white;
+  padding: null;
+  background: #0c3c78;
   font-size: 1.3rem;
+  color: white;
+  text-shadow: null;
+  text-align: null;
+  text-decoration: null;
   border-radius: 8px;
 }
-form .login-btn:hover {
-  background: #003333;
-  color: white;
+form .hover {
+  background: #0c3c78;
+  color: #bb1333;
   cursor: pointer;
 }
 form a {
   display: flex;
   margin-bottom: 10px;
-  text-decoration: none;
+  font-size: null;
   color: black;
+  text-shadow: null;
+  text-align: null;
+  text-decoration: none;
 }
-form a:hover {
-  color: #da3309;
+form a .hover {
+  color: #bb1333;
 }
 .landing {
   width: 95%;
@@ -400,7 +430,7 @@ form a:hover {
   height: null;
   margin: null;
   padding: 10px;
-  background: #003333;
+  background: #0c3c78;
   font-size: 28px;
   color: white;
   text-shadow: null;
@@ -448,7 +478,7 @@ form a:hover {
   height: null;
   margin: null;
   padding: 7px;
-  background: #003333;
+  background: #0c3c78;
   font-size: 24px;
   color: white;
   text-shadow: null;
@@ -465,18 +495,27 @@ form a:hover {
 .landing .catagories .info p {
   padding: 5px;
 }
+.landing .catagories .info .btn a {
+  color: white;
+}
+.landing .catagories .info .hover {
+  background: #0c3c78;
+}
+.landing .catagories .info .hover a {
+  color: #bb1333;
+}
 .landing .btn {
   width: 30%;
   height: null;
   margin: 10px auto;
   padding: 5px;
-  background: #669999;
+  background: #1a61b0;
   font-size: null;
   color: white;
   text-shadow: 1px 1px black;
   text-align: center;
   text-decoration: null;
-  border: 1px solid #003333;
+  border: 1px solid #0c3c78;
   border-top: null;
   border-bottom: null;
   border-right: null;
@@ -485,20 +524,18 @@ form a:hover {
   box-shadow: null;
   justify-content: end;
 }
-.landing .btn a {
-  font-size: null;
-  color: #f0f0f0;
-  text-shadow: null;
-  text-align: null;
-  text-decoration: none;
+.landing .hover {
+  background: #0c3c78;
+  color: #bb1333;
 }
 .top-five {
+  background: #55596d;
   width: 95%;
   height: null;
   margin: 0 auto;
   padding: 10px;
   background: null;
-  border: 1px solid #669999;
+  border: 1px solid #1a61b0;
   border-top: null;
   border-bottom: null;
   border-right: null;
@@ -508,7 +545,7 @@ form a:hover {
 }
 .top-five .bar h1 {
   font-size: 24px;
-  color: #003333;
+  color: #0c3c78;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
   text-align: null;
   text-decoration: null;
@@ -528,7 +565,7 @@ form a:hover {
   margin: 5px;
   padding: null;
   background: #f0f0f0;
-  border: 1px solid #669999;
+  border: 1px solid #1a61b0;
   border-top: 5px;
   border-bottom: 5px 5px 5px rgba(0, 0, 0, 0.2);
   border-right: null;
@@ -547,10 +584,10 @@ form a:hover {
   height: 30px;
   margin: null;
   padding: null;
-  background: #003333;
+  background: #0c3c78;
   border: null;
   border-top: null;
-  border-bottom: 1px solid #00191a;
+  border-bottom: 1px solid #0a3061;
   border-right: null;
   border-left: null;
   border-radius: 4px 4px 0 0;
@@ -570,9 +607,9 @@ form a:hover {
 .cards .card .btn {
   width: 40%;
 }
-.cards .card .btn:hover {
-  background: #003333;
-  color: white;
+.cards .card .hover {
+  background: #0c3c78;
+  color: #bb1333;
   cursor: pointer;
 }
 .copy {
@@ -621,9 +658,9 @@ form a:hover {
   height: null;
   margin: 1rem auto;
   padding: 2rem;
-  background: #669999;
+  background: #1a61b0;
   text-align: center;
-  border: 1px solid #003333;
+  border: 1px solid #0c3c78;
   border-top: null;
   border-bottom: null;
   border-right: null;
@@ -638,8 +675,11 @@ form a:hover {
   height: null;
   margin: null;
   padding: 1rem;
-  background: #669999;
-  border: 1px solid #003333;
+  background: #1a61b0;
+  border: 1px solid #0c3c78;
+}
+.main-info.cook-it .description p {
+  color: black;
 }
 @media (max-width: 500px) {
   .main-info.cook-it .description {

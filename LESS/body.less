@@ -1,4 +1,5 @@
 .top-five {
+    background: @font-color-dark;
     .position-element(@width: 95%,
         @margin: @zero,
         @padding: 10px,
@@ -58,11 +59,12 @@
         .btn {
             width: 40%;
 
-            &:hover {
-                background: @main-color;
-                color     : white;
-                cursor    : pointer;
-            }
+        }
+
+        .hover {
+            background: @main-color;
+            color     : @accent-color;
+            cursor    : pointer;
         }
     }
 }

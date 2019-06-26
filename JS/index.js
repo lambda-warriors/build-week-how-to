@@ -35,7 +35,7 @@ if (logInBtn != null) {
             if (username === users[i].username && password === users[i].password) {
                 alert('Welcome ' + users[i].name + '.')
                 return;
-            } 
+            }
 
         }
         alert('Wrong Combo Bro...')
@@ -49,7 +49,12 @@ if (logInBtn != null) {
 //#region Home Page
 
 var page_buttons = document.querySelectorAll('.btn');
-
+var mat_btns = document.querySelectorAll('.mat');
+mat_btns.forEach(elm => {
+    elm.addEventListener('click',(e)=>{
+        alert('Site is under Maitenence Sorry...');
+    });
+});
 page_buttons.forEach(elm => {
     elm.addEventListener('mouseover', (e) => {
         elm.classList.add('hover');

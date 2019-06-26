@@ -326,6 +326,15 @@ body {
     margin-top: 1rem;
   }
 }
+.cards.login-cards {
+  justify-content: space-evenly;
+}
+.login-card ul {
+  padding: 1rem 0;
+}
+.login-card li {
+  padding: 0.2rem 0;
+}
 .login-box {
   margin: 10rem auto;
   display: flex;
@@ -400,7 +409,7 @@ form a {
   text-align: null;
   text-decoration: none;
 }
-form a .hover {
+form a:hover {
   color: #bb1333;
 }
 .landing {

@@ -30,14 +30,16 @@ if (logInBtn != null) {
 
         let username = document.getElementById('username').value;
         let password = document.getElementById('password').value;
-
+        let anchor = document.getElementById('log_btn');
         for (let i = 0; i < users.length; i++) {
             if (username === users[i].username && password === users[i].password) {
-                alert('Welcome ' + users[i].name + '.')
+                location.href = "index.html"
+                alert('Welcome ' + users[i].name + '.');
                 return;
             }
 
         }
+        
         alert('Wrong Combo Bro...')
     });
 }

@@ -1,10 +1,10 @@
 .nav {
     @media @mobile {
-        width         : 100%;
+        width: 100%;
         flex-direction: row;
     }
 
-    display                 : block;
+    display : block;
     .position-element(@width: 15%, @padding: 1rem, @background : @main-color);
 
     .logo {
@@ -14,7 +14,7 @@
 
         .fix-position();
         .position-element(@margin: @zero, @padding: 1rem 2rem);
-        .set-text(@size          : 1.4rem, @color: white, @shadow: 1px 1px @shadow-dark, @align: center);
+        .set-text(@size : 1.4rem, @color: white, @shadow: 1px 1px @shadow-dark, @align: center);
     }
 
     .nav-buttons {
@@ -22,20 +22,20 @@
             position: unset;
         }
 
-        text-align        : center;
+        text-align : center;
         .fix-position(@top: 60px);
 
         a {
-            display                    : block;
+            display: block;
             .position-element(@padding : 1rem);
-            .set-text(@color           : white, @shadow: @shadow-lite, @decor: none);
-            .set-border(@border        : 1px solid @main-color, @rounding: .7rem);
+            .set-text(@color : white, @shadow: @shadow-lite, @decor: none);
+            .set-border(@border : 1px solid @main-color, @rounding: .7rem);
 
         }
 
         .hover {
             .position-element(@background: darken(@second-color, 10%));
-            .set-text(@color             : @accent-color);
+            .set-text(@color : @accent-color);
             .set-border(1px solid darken(@main-color, 2%));
             cursor: pointer;
         }
@@ -44,4 +44,5 @@
 
 .close {
     display: none;
+
 }

@@ -258,6 +258,13 @@ body {
   padding: null;
   background: null;
 }
+.about h1 {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  font-style: bold;
+}
 .about .dev-info {
   display: flex;
   width: null;
@@ -310,7 +317,8 @@ body {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 .about .dev-info .dev-text {
-  font-size: 1.3rem;
+  padding: 8rem;
+  font-size: 1.6rem;
   order: 1;
 }
 .about .dev-info.a {

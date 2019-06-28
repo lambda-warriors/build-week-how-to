@@ -21,7 +21,9 @@ var users = [{
     }
 ]
 
-
+document.addEventListener("keydown", function(event) {
+    console.log(event.which);
+  })
 
 let logInBtn = document.querySelector('.btn.login')
 
@@ -39,10 +41,27 @@ if (logInBtn != null) {
             }
 
         }
+        alert('Wrong Input for Username or Password, Please Try Again.');
+   });
+    document.addEventListener('keypress',(event)=>{
+        if(event.keycode === 13){
+            
+        let username = document.getElementById('username').value;
+        let password = document.getElementById('password').value;
+        let anchor = document.getElementById('log_btn');
+        for (let i = 0; i < users.length; i++) {
+            if (username === users[i].username && password === users[i].password) {
+                window.location.href = "index.html"
+                alert('Welcome ' + users[i].name + '.');
+                return;
+            }
+
+        }
         
-        alert('Wrong Combo Bro...')
+        alert('Wrong Input for Username or Password, Please Try Again.');
+        }
     });
-}
+};
 
 
 

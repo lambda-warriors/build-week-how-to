@@ -390,11 +390,11 @@ form input {
   padding: 1rem;
   background: null;
 }
-form .btn {
+form .login-btn {
   width: 80%;
   height: null;
   margin: 1rem auto;
-  padding: null;
+  padding: 0.6rem 0;
   background: #0c3c78;
   font-size: 1.3rem;
   color: white;
@@ -402,6 +402,13 @@ form .btn {
   text-align: null;
   text-decoration: null;
   border-radius: 8px;
+}
+form .login-btn a {
+  width: null;
+  height: null;
+  margin: 0 auto;
+  padding: 0 0 0 7rem;
+  background: null;
 }
 form .hover {
   background: #0c3c78;

@@ -63,14 +63,19 @@ form {
 
     .login-btn {
         .position-element(@width: 80%, @margin : 1rem auto,
-            @background: @main-color, @padding: .6rem 0);
+            @background: @second-color, @padding: .6rem 0);
         .set-text(@color : white,
             @size: 1.3rem);
 
         border-radius: 8px;
 
         a {
-           .position-element(@margin: 0 auto, @padding: 0 0 0 7rem);
+           .position-element(@margin: 0 auto, @padding: 0 0 0 7rem,);
+           .set-text(@color: white);
+        }
+
+        &:hover {
+            background: @main-color
         }
 
     }

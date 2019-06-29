@@ -395,7 +395,7 @@ form .login-btn {
   height: null;
   margin: 1rem auto;
   padding: 0.6rem 0;
-  background: #0c3c78;
+  background: #1a61b0;
   font-size: 1.3rem;
   color: white;
   text-shadow: null;
@@ -409,6 +409,14 @@ form .login-btn a {
   margin: 0 auto;
   padding: 0 0 0 7rem;
   background: null;
+  font-size: null;
+  color: white;
+  text-shadow: null;
+  text-align: null;
+  text-decoration: null;
+}
+form .login-btn:hover {
+  background: #0c3c78;
 }
 form .hover {
   background: #0c3c78;

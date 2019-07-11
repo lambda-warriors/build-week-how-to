@@ -25,7 +25,7 @@ document.addEventListener("keydown", function(event) {
     console.log(event.which);
   })
 
-let logInBtn = document.querySelector('.btn.login')
+let logInBtn = document.querySelector('.login-btn')
 
 if (logInBtn != null) {
     logInBtn.addEventListener('click', () => {
